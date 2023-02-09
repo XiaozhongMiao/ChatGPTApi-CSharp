@@ -18,6 +18,8 @@ user这个属性暂时可以随便写，我这个之后做用户的鉴权认证�
 
 另外，ApiKey请在appconfig.json里面配置一下，要不然无法使用哦，我才不会让你用我的Key呢~
 
+启动报错的话，请下载.NET6.0 RunnTime哦 https://dotnet.microsoft.com/en-us/download/dotnet/6.0
+
 # 请求参数
 
 | key    | 含义                                         |必填   |

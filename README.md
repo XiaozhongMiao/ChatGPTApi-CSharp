@@ -20,6 +20,19 @@ user这个属性暂时可以随便写，我这个之后做用户的鉴权认证�
 
 启动报错的话，请下载.NET6.0 RunTime哦 https://dotnet.microsoft.com/en-us/download/dotnet/6.0
 
+# 请求示例
+
+Request URL:
+
+https://example.com/api/test/ChatGPT?msg=wsw
+
+Curl:
+
+curl -X 'POST' \
+  'https://example.com/api/test/ChatGPT?msg=wsw' \
+  -H 'accept: */*' \
+  -d ''
+
 # 请求参数
 
 | key    | 含义                                         |必填   |

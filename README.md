@@ -3,7 +3,7 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/XiaozhongMiao/ChatGPTApi-CSharp.svg)](https://github.com/XiaozhongMiao/ChatGPTApi-CSharp/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/XiaozhongMiao/ChatGPTApi-CSharp.svg)](https://github.com/XiaozhongMiao/ChatGPTApi-CSharp/network)
-[![GitHub license](https://img.shields.io/github/license/XiaozhongMiao/ChatGPTApi-CSharp.svg)](https://github.com/github.com/XiaozhongMiao/ChatGPTApi-CSharp/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/XiaozhongMiao/ChatGPTApi-CSharp.svg)](https://github.com/XiaozhongMiao/ChatGPTApi-CSharp/blob/master/LICENSE)
 
 
 自己写着玩的，主要是解决了国内无法直接访问ChatGPT的问题

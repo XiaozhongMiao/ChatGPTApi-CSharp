@@ -6,9 +6,6 @@
     <a href="https://github.com/XiaozhongMiao/ChatGPTApi-CSharp/network" style="text-decoration:none" >
         <img src="https://img.shields.io/github/forks/XiaozhongMiao/ChatGPTApi-CSharp.svg" alt="GitHub forks"/>
     </a>
-    <a href="https://github.com/XiaozhongMiao/ChatGPTApi-CSharp/blob/master/LICENSE" style="text-decoration:none" >
-        <img src="https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg" alt="GitHub license"/>
-    </a>
 
 自己写着玩的，主要是解决了国内无法直接访问ChatGPT的问题
 

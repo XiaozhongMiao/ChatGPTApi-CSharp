@@ -24,12 +24,12 @@ user这个属性暂时可以随便写，我这个之后做用户的鉴权认证�
 
 Request URL:
 
-https://example.com/api/test/ChatGPT?msg=wsw
+https://example.com/api/test/ChatGPT?msg=requestText
 
 Curl:
 
 curl -X 'POST' \
-  'https://example.com/api/test/ChatGPT?msg=wsw' \
+  'https://example.com/api/test/ChatGPT?msg=requestText' \
   -H 'accept: */*' \
   -d ''
 

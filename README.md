@@ -26,12 +26,12 @@ ApiKey在这里申请哦：https://platform.openai.com/account/api-keys
 
 Request URL:
 
-https://example.com/api/test/ChatGPT?msg=requestText
+https://example.com/api/test/ChatGPT/chat?msg=requestText
 
 Curl:
 
 curl -X 'POST' \
-  'https://example.com/api/test/ChatGPT?msg=requestText' \
+  'https://example.com/api/test/ChatGPT/chat?msg=requestText' \
   -H 'accept: */*' \
   -d ''
 

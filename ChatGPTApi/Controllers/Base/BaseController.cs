@@ -2,7 +2,7 @@
 
 namespace ChatGPTApi.Controllers.Base
 {
-    [Route("api/{user}/[controller]")]
+    [Route("api/{user}/[controller]/[action]")]
     public class BaseController : Controller
     {
         

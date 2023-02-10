@@ -43,10 +43,6 @@ namespace ChatGPTApi.Model
             }
         }
 
-        public string model { get
-            {
-                return "text-davinci-003";
-            }
-        }
+        public string model { get; set; }
     }
 }

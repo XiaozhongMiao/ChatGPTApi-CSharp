@@ -1,0 +1,39 @@
+{
+  "IpRateLimiting": {
+    "EnableEndpointRateLimiting": false,
+    "StackBlockedRequests": false,
+    "RealIpHeader": "X-Real-IP",
+    "ClientIdHeader": "X-ClientId",
+    "HttpStatusCode": 200,
+    "QuotaExceededResponse": { //自定义返回的错误内容
+      "Content": "{{\"code\":-1,\"msg\":\"Too Many Request\",\"data\":\"\"}}",
+      "ContentType": "application/json",
+      "StatusCode": 200
+    },
+    //"IpWhitelist": [ "127.0.0.1", "::1/10", "192.168.0.0/24" ],
+    //"EndpointWhitelist": [ "get:/api/license", "*:/api/status" ],
+    "EndpointWhitelist": [ "get:/swagger/*" ],
+    "GeneralRules": [
+      {
+        "Endpoint": "*",
+        "Period": "1m",
+        "Limit": 5//就是请求几次会被禁止
+      }
+      //{
+      //  "Endpoint": "*",
+      //  "Period": "15m",
+      //  "Limit": 10
+      //},
+      //{
+      //  "Endpoint": "*",
+      //  "Period": "12h",
+      //  "Limit": 1000
+      //},
+      //{
+      //  "Endpoint": "*",
+      //  "Period": "7d",
+      //  "Limit": 10000
+      //}
+    ]
+  }
+}

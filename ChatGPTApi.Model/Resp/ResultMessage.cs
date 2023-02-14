@@ -10,7 +10,7 @@ namespace ChatGPTApi.Model.Resp
     {
         public int code { get; set; }
         public string msg { get; set; }
-        public long timespan { get
+        public long timestamp { get
             {
                 TimeSpan timeSpan = DateTime.Now - new DateTime(1970, 1, 1, 0, 0, 0, 0);
                 return Convert.ToInt64(timeSpan.TotalMilliseconds);

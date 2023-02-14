@@ -6,7 +6,7 @@
     "ClientIdHeader": "X-ClientId",
     "HttpStatusCode": 200,
     "QuotaExceededResponse": { //自定义返回的错误内容
-      "Content": "{{\"code\":-1,\"msg\":\"Too Many Request\",\"data\":\"\"}}",
+      "Content": "{{\"code\":-1,\"msg\":\"Too Many Request\",\"data\":null}}",
       "ContentType": "application/json",
       "StatusCode": 200
     },

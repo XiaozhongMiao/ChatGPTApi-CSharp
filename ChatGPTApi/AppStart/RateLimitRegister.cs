@@ -18,15 +18,15 @@ namespace ChatGPTApi.AppStart
             //注入计数器和规则存储
 
             //内存
-            services.AddSingleton<IIpPolicyStore, MemoryCacheIpPolicyStore>();
-            services.AddSingleton<IClientPolicyStore, MemoryCacheClientPolicyStore>();
+            services.AddSingleton<IIpPolicyStore, MemoryCacheIpPolicyStore>();//IP限制
+            services.AddSingleton<IClientPolicyStore, MemoryCacheClientPolicyStore>();//客户端限制
             services.AddSingleton<IRateLimitCounterStore, MemoryCacheRateLimitCounterStore>();//计数器
             services.AddInMemoryRateLimiting();
 
             //redis
-            //services.AddSingleton<IRateLimitCounterStore, DistributedCacheRateLimitCounterStore>();
-            //services.AddSingleton<IIpPolicyStore, DistributedCacheIpPolicyStore>();
-            //services.AddSingleton<IClientPolicyStore, DistributedCacheClientPolicyStore>();
+            //services.AddSingleton<IIpPolicyStore, DistributedCacheIpPolicyStore>();//IP限制
+            //services.AddSingleton<IClientPolicyStore, DistributedCacheClientPolicyStore>();//客户端限制
+            //services.AddSingleton<IRateLimitCounterStore, DistributedCacheRateLimitCounterStore>();//计数器
             //services.AddRedisRateLimiting();
 
             services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();

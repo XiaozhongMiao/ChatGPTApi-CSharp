@@ -4,6 +4,7 @@ using ChatGPTApi.Filters;
 using ChatGPTApi.Model;
 using ChatGPTApi.Model.Resp;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace ChatGPTApi.Controllers
 {
@@ -16,11 +17,11 @@ namespace ChatGPTApi.Controllers
             _apibu = apibu;
         }
         [HttpPost, RequestCheckFilterAttribute(alias = "chat")]
-        public async Task<IActionResult> chat(string msg)
+        public async Task<ResultMessage<GPTResponse>> chat([FromBody] ChatApiModel param)
         {
-            ResultMessage<GPTResponse> res =   _apibu.getText(msg);
+            ResultMessage<GPTResponse> res =   _apibu.getText(param.msg);
 
-            return Json(res);
+            return res;
         }
     }
 }

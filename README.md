@@ -24,7 +24,7 @@ ApiKey在这里申请哦：https://platform.openai.com/account/api-keys
 
 2023-02-09 第一个版本，实现了简单的一些逻辑,基本的调用
 
-2023-02-14 第二个版本做好接口防刷了，配置文件是ratelimit.json里面有个GeneralRules 下面的“Period”是限制的统计时间。可以参考我注释的代码。Limit就是次数，这个次数是访问多少次被禁止哈，不是可以访问多少次，可以访问的次数是填写的数字-1，比如填写5，那么就访问4次不会被封。后续会使用appsettings里面的配置。默认配置：一分钟内限制4次访问
+2023-02-14 第二个版本做好接口防刷了，配置文件是ratelimit.json里面有个GeneralRules 下面的“Period”是限制的统计时间。可以参考我注释的代码。Limit就是次数。后续会使用appsettings里面的配置。默认配置：一分钟内限制5次访问
 
 # 请求示例
 
